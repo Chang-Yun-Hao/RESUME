@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
+body{
+    background-image: url("image/LW002.jpg");
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    font-family: 'Noto Serif TC';
+}
+.container{
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+    background-image: url("image/ripples.png");
+    /*background-attachment: fixed;*/
+    box-shadow:0px 0px 20px 6px #929292;
+    background-color: rgb(255, 255, 255);
+}
+/*------------aboutus--------------*/
+.aboutus{
+    display: flex;
+    background-color: #000;
+    background-image: url("image/bg.png");
+    background-size: cover;
+}
+.a1{
+    width: 25%;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+.me{
+    width: 100%;
+    border-radius: 50%;
+    border: rgb(255, 255, 255) solid 5px;
+}
+.me:hover{
+    transform: rotate(-15deg) scale(1.05);
+    transition: 0.8s;
+}
+.a2{
+    width: 30%;
+    position: relative;
+    padding: 30px;
+    color: #ffffff;
+    left: 30px;
+}
+.name{
+    position: absolute;
+    top: 8%;
+    left: 40px;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #e66640;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    top: 15px;
+    position: relative;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.t1{
+    font-size: 25px;
+}
+.dep{
+    position: relative;
+    top: 20px;
+}
+.a3{
+    width: 30%;
+    position: relative;
+    padding: 20px;
+    color:white;
+    top: 10px;
+    left: 20px;
+}
+.l1{
+    height: 25%;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:10px;
+}
+.icon:hover{
+    transform: rotate(-360deg) scale(1.6);
+    transition: 1s;
+}
+.l2{
+    height: 25%;
+}
+.l3{
+    height: 25%;
+}
+.l4{
+    height: 25%;
+}
+/*--------------end---------------*/
+/*------------slogan-------------*/
+.ml14 {
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 250;
+    font-family: ‘Noto Sans TC’, sans-serif;
+    letter-spacing: 7px;
+}
+  
+.ml14 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+
+.ml14 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+/*--------------end------------*/
+.main{
+    width: 100%;
+    display: flex;
+}
+.left{
+    width: 45%;
+    height: 100%;
+}
+.profession{
+    position: relative;
+    top: 0px;
+}
+.heading{
+    display:inline-block;
+    padding-right: 10px;
+    background: rgb(236, 214, 214);
+}
+.person1{
+    display: flex;
+    position: relative;
+    top: 0px;
+}
+.txtp{
+    display: flex;
+    text-align: center;
+}
+.p1{
+    width: 32%;
+}
+.p2{
+    width: 30%;
+}
+.p3{
+    width: 32%;
+}
+.person2{
+    display: flex;
+    position: relative;
+    top: px;
+}
+.coding{
+    position: relative;
+    top: 10px;
+}
+.education{
+    position: relative;
+    top: 25px;
+}
+/*-----------bar----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.program{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.skill-bars{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(90, 90, 90, 0.2);
+    border-radius: 10px;
+}
+.skill-bars .bar{
+    margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+    margin-top: 0px;
+}
+.skill-bars .bar .info{
+    margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #6665ee;
+  animation: animate 1.8s 3s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 86%;
+}
+.bar .progress-line.css span{
+  width: 80%;
+}
+.bar .progress-line.jsp span{
+  width: 70%;
+}
+.bar .progress-line.python span{
+  width: 75%;
+}
+.bar .progress-line.javascript span{
+    width: 50%;
+  }
+.bar .progress-line.mysql span{
+  width: 80%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "85%";
+}
+.progress-line.css span::after{
+  content: "80%";
+}
+.progress-line.jsp span::after{
+  content: "70%";
+}
+.progress-line.python span::after{
+  content: "75%";
+}
+.progress-line.javascript span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+    content: "80%";
+  }
+/*-----------bar end  ------------*/
+
+.edu{
+    padding: 0 0px;
+    width: 350px;
+    margin: auto;
+    font-size: larger;
+    position: relative;
+    top: -10px;
+}
+.edu h3{
+    font-weight: 400;
+}
+.now{
+    color: #970c0c;
+    display: inline-block;
+}
+.right{
+    width: 55%;
+    height: 100%;
+    border-left: solid #e4c8c8;
+}
+
+/*-----timeline--------*/
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    margin-left: -3px;
+    box-shadow: 5px 5px 10px rgba(48, 48, 48, 0.2);
+  }
+  
+  /* Container around content */
+  .container2 {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 85%;
+    height: 100%;
+  }
+  
+  /* The circles on the timeline */
+  .container2::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 5%;
+  }
+  
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 0px 30px 20px 30px ;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  }
+
+  .list{
+    list-style-position:outside; 
+    list-style-type:square;
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    margin: 8px 0px;
+    line-height: 35px;
+  }
+  .list li:hover{
+      color:black;
+      transform: scale(1.02);
+      transition: 0.1s;
+  }
+
+.content h2{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*-------end---------*/
+.paper{
+    height: 300px;
+    margin-top: 20px;
+}
+.paper img{
+    height: 300px;
+    margin-left: 3px;
+}
+
+
+.main2{
+    margin: 40px 40px 0 40px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
+    background: rgba(228, 219, 219, 0.61);
+    border-radius: 10px;
+    padding: 5px;
+    height: 100%;
+}
+.product_title{
+    text-align: center;
+    border: ;
+}
+
+.product_2{
+  border-bottom:solid rgb(189, 179, 168);
+  height: 100%;
+  width: 850px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -50px;
+}
+.product_3{
+  height: 340px;
+  width: 850px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -30px;
+}
+.pd2{
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  margin: 20px 0;
+}
+.pd3{
+  width: 45%;
+  padding: 10px;
+  margin: 0px 0;
+}
+.pd2 h1,.pd3 h1,.pd2 h2,.pd3 h2{
+  letter-spacing: 3px;
+}
+.pd2 p{
+  font-size: 20px;
+  line-height: 38px;
+  color: rgb(80, 80, 80);
+}
+.pd3 p{
+  font-size: 20px;
+  line-height: 38px;
+  color: rgb(80, 80, 80);
+}
+.de2{
+  width: 48%;
+  position: relative;
+  left: 35px;
+}
+.pc2{
+  overflow:hidden;
+  position: relative;
+  top: 40px;
+  height: 280px;
+  border-radius: 10px;
+}
+.de2 img{
+  position: relative;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+}
+.de2 img:hover{
+  transform:scale(1.1,1.1);
+  transition: 0.5s;
+}
+
+.footer{
+text-align: center;
+padding: 20px;
+}
